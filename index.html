@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GeeksforGeeks survey</title>
+  <link rel="icon" href="Img/icon.ico" />
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+
+<body>
+  <h1>GeeksforGeeks Survey Form</h1>
+  <div class="container">
+    <form action="mailto:malikshailav@gmail.com" method="post">
+      <label for="name"> Name <span>   *</span> </label>
+      <input type=" text" name="name" placeholder="Enter your Name" id="name" ; required />
+
+      <label for="email" class="makeBlock">Email<span>  *</span></label>
+      <input type="email" name="email" id="email" class="makeBlock" placeholder="Enter your Email" required />
+
+      <label for="age">Age<span>   *</span></label>
+      <input type="text" name="age" placeholder="Enter your age" required/>
+
+      <label for="discribe">Which option best describes you?<span>   *</span></label>
+      <select name="discribe" required>
+        <option value="Student">Student</option>
+        <option value="Intern">Intern</option>
+        <option value="Working Professional">Working Professional</option>
+      </select>
+
+      <label>Would you recommend GFG to a friend?</label>
+      <div class="radio">
+        <label>
+          <input type="radio" name="recommend" value="yes"   />
+          Yes
+        </label>
+
+        <label>
+          <input type="radio" name="recommend" value="No" />
+          No</label>
+
+        <label>
+          <input type="radio" name="recommend" value="Maybe" />
+          May be</label>
+      </div>
+
+      <label class="target">Languages and framework known
+        <span class="check">(check all that apply)</span></label>
+      <div class="checkbox">
+        <label> <input type="checkbox" name="skill" value="C" />C</label>
+
+
+        <label><input type="checkbox" name="skill" value="C++" />C++</label>
+
+        <label> <input type="checkbox" name="skill" value="C#" />C#</label>
+        <label>
+          <input type="checkbox" name="skill" value="java">
+          Java
+        </label>
+        <label> <input type="checkbox" name="skill" value="python" />python</label>
+
+        <label>
+          <input type="checkbox" name="skill" value="JavaScript">
+          JavaScript</label>
+
+        <label>
+          <input type="checkbox" name="skill" value="React">
+          React</label>
+        <label>
+          <input type="checkbox" name="skill" value="Anguler">
+          Anguler</label>
+        <label>
+          <input type="checkbox" name="skill" value="Django">
+          Django</label>
+        <label>
+          <input type="checkbox" name="skill" value="Spring">
+          Spring</label>
+      </div>
+      <label class= "target" for="suggestion">Any comments or suggestions</label>
+      </label>
+      </label>
+      <textarea name="suggestion" id="skill" cols="30" rows="4"></textarea>
+
+      <button type="submit" value="submit">Submit</button>
+
+    </form>
+  </div>
+</body>
+
+</html>
