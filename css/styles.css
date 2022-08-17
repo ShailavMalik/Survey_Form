@@ -8,7 +8,7 @@ h1 {
 }
 
 label {
-  font-size: 18px;
+  font-size: 1.2rem;
   display: block;
   padding: 30px 20px 10px 20px;
 }
@@ -16,7 +16,7 @@ label {
 button {
   background-color: #05c46b;
   margin: 50px 20px 50px 20px;
-  font-size: 18px;
+  font-size: 1.2rem;
   border: none;
 }
 
@@ -26,7 +26,7 @@ button {
   display: block;
   margin-left: 20px;
   margin-right: 20px;
-  width: 552px;
+  width: 550px;
   height: 32px;
 }
 
@@ -38,9 +38,10 @@ textarea {
 
 .container {
   background-color: white;
-  max-width: 600px;
+  width: 600px;
   margin: auto;
-  height: 1170px;
+  padding-bottom: 8px;
+  height: fit-content;
   box-shadow: 1px 1px 10px 0.15px;
 }
 
@@ -61,9 +62,111 @@ textarea {
 
 .check {
   all: revert;
-  font-size: 14px;
+  font-size: 1.3rem;
 }
 
 span {
   color: red;
+}
+
+
+
+@media only screen and (max-width:700px) {
+
+  input,
+  select,
+  button {
+    margin-left: 3%;
+    margin-right: 3%;
+    width: 90%;
+  }
+
+  .container {
+    width: 80%;
+    min-width: none;
+    margin: auto;
+  }
+
+  textarea {
+    width: 90%;
+  }
+
+  h1 {
+    margin-bottom: 25px;
+  }
+
+}
+
+@media only screen and (max-width:600px) {
+
+  .check,
+  label,
+  button {
+    font-size: 1rem;
+  }
+
+  label {
+    padding: 17px 10px 9px 10px;
+    margin-left: 6px;
+  }
+
+  .target
+  {
+    padding:5px;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  input {
+    height: 25px;
+  }
+}
+
+@media only screen and (max-width:420px) {
+
+  .check,
+  label,
+  button {
+    font-size: 0.9rem;
+  }
+
+  label {
+    padding: 14px 10px 9px 10px;
+  }
+
+  h1 {
+    font-size: 1.4rem;
+    margin-bottom: 25px;
+  }
+
+  input {
+    height: 18px;
+  }
+
+}
+
+@media only screen and (max-width:304px) {
+
+  .check,
+  label,
+  button {
+    font-size: 0.9rem;
+  }
+
+  label {
+    padding: 10px 10px 5px 10px;
+  }
+
+  input {
+    height: 12px;
+  }
+
+  h1 {
+    font-size: 1rem;
+    margin-bottom: 10px;
+  }
+
+
 }
