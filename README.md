@@ -1,5 +1,3 @@
-This is very basic webpage using pure html and css 
-ref:https://www.geeksforgeeks.org/build-a-survey-form-using-html-and-css/
-
-
-Webpage Hosted here: https://shailavmalik.github.io/Survey_Form/
+A basic *survey form* using pure html and css
+<br>
+**Click on link to view**: https://shailavmalik.github.io/Survey_Form/
